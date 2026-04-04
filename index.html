@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IamFlora</title>
+    <link href="midterm.css" rel="stylesheet" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo">Iam<span>Flora</span></a>
+  <div class="nav-links">
+    <a href="index.html" class="active">Home</a>
+    <a href="projects.html">Projects</a>
+  </div>
+  <button class="hamburger" id="hamburger">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html" class="active">Home</a>
+  <a href="projects.html">Projects</a>
+</div>
+
+
+
+<!-- HERO -->
+<section class="hero">
+
+<div class="blob blob-1" aria-hidden="true">
+  <svg viewBox="0 0 500 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="
+      M250 80
+      C275 55, 320 62, 338 92
+      C356 122, 348 155, 338 175
+      C363 168, 390 180, 395 208
+      C400 236, 380 262, 358 272
+      C375 285, 380 318, 362 338
+      C344 358, 310 362, 288 348
+      C278 362, 262 372, 246 366
+      C230 372, 214 362, 204 348
+      C182 362, 148 358, 130 338
+      C112 318, 117 285, 134 272
+      C112 262, 92 236, 97 208
+      C102 180, 129 168, 154 175
+      C144 155, 136 122, 154 92
+      C172 62, 217 55, 242 80
+      C244 72, 248 68, 250 80Z
+    " fill="#003B59" opacity="0.85"/>
+    <!-- amber centre -->
+    <ellipse cx="246" cy="222" rx="48" ry="52" fill="#DD782F" opacity="0.9"/>
+    <!-- white dot highlight -->
+    <circle cx="238" cy="212" r="16" fill="#fff" opacity="0.18"/>
+  </svg>
+</div>
+
+  <!-- Blob 2: amber irregular blob right -->
+  <div class="blob blob-2" aria-hidden="true">
+    <svg viewBox="0 0 440 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="
+        M225 28
+        C278 8, 348 35, 378 88
+        C408 141, 395 205, 370 248
+        C405 278, 418 338, 388 382
+        C358 426, 295 438, 244 420
+        C210 445, 158 448, 118 425
+        C68 415, 25 370, 18 318
+        C-10 278, -8 215, 28 168
+        C5 128, 18 68, 68 38
+        C108 8, 172 48, 225 28Z
+      " fill="#DD782F"/>
+      <!-- inner lighter accent -->
+      <ellipse cx="210" cy="235" rx="70" ry="85" fill="#F0A060" opacity="0.35"/>
+    </svg>
+  </div>
+
+  <!-- Blob 3: small navy top-right -->
+  <div class="blob blob-3" aria-hidden="true">
+    <svg viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M80 8 C110 0,148 22,155 55 C162 88,140 125,110 140 C80 155,35 145,15 118 C-5 91,5 45,30 22 C50 5,58 14,80 8Z" fill="#003B59"/>
+    </svg>
+  </div>
+
+  <!-- Blob 4: small amber bottom-left -->
+  <div class="blob blob-4" aria-hidden="true">
+    <svg viewBox="0 0 140 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M70 5 C100 -5,135 20,138 52 C141 84,118 118,88 130 C58 142,18 128,6 98 C-6 68,8 25,35 10 C50 2,52 13,70 5Z" fill="#DD782F"/>
+    </svg>
+  </div>
+
+  <!-- Centre content -->
+  <div class="hero-content">
+    <span class="hero-eyebrow">心理學 × 設計 × 探索</span>
+    <h1 class="hero-title">Hello!<br>It's <em>Flora</em></h1>
+    <p class="hero-sub">熱愛心理學的設計新手。透過文字與介面，把腦海裡的靈感變成真實的作品。</p>
+    <div class="hero-links">
+      <a href="#projects" class="btn-solid">看看我的作品 →</a>
+    </div>
+  </div>
+
+  <div class="scroll-hint">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+
+<section class="about" id="about">
+  <div class="about-wrap">
+    <div class="about-photo">
+      <img src="images/Profile1.png" alt="Flora" onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'about-photo-placeholder\'>F</div>'">
+    </div>
+    <div class="about-text">
+    <div class="section-header">
+      <span class="section-tag">01 ABOUT ME</span>
+      <h2 class="section-title">Psy &<em>UX/UI DESIGNER</em></h2>
+    </div>
+     <div class="interest-pills">
+        <span class="pill">🧠 心理學</span>
+        <span class="pill">🔍 用戶研究</span>
+        <span class="pill">✏️ 介面設計</span>
+        <span class="pill">🌍 跨文化視野</span>
+      </div>
+      <p>嗨，我是 Flora。我從心理學走進 UX 設計，因為我一直相信——真正好的設計，來自對人的深度理解。</p>
+      <p>目前我在清華大學就讀 I/O 心理學碩士，同時持續累積設計實作經驗。我擅長用戶研究、Empathy Map、競品分析，以及用 Figma 打造 wireframe 與互動原型。</p>
+      <p>最近完成的專案「阿伴」，是一款為離鄉學生設計的 AI 陪伴 App——從研究情感痛點、設計互動流程，到兩輪可用性測試，我試著讓每一個設計決策都有研究作為支撐。</p>
+      <p><b>如果你好奇我如何從使用者洞察出發做設計，歡迎看看我的作品集!</b></p>
+      <div class="about-action">
+        <a href="assets/flora_resume.pdf" class="download-btn" target="_blank">View Full Resume</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WAVY DIVIDER -->
+<div class="hand-divider">
+  <svg viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="display:block;width:100%;height:120px;">
+    <path d="M0,60 C240,120 480,0 720,60 C960,120 1200,0 1440,60 L1440,0 L0,0 Z" fill="#fbf7f2"/>
+  </svg>
+</div>
+
+
+<section class="project-section" id="projects">
+  <div class="project-inner">
+    <div class="section-header">
+  <span class="section-tag">02 PORTFOLIO</span>
+  <h2 class="section-title">Selected <em>Projects</em></h2>
+</div>
+    <div class="project-grid">
+
+      <a href="projects.html#aban" class="pcard third c-amber">
+        <div class="pcard-img">
+          <img src="images/aban.png" alt="阿伴 App：城市足跡助理">
+        </div>
+        <div class="pcard-body">
+          <div class="pcard-cats">
+            <span class="cat cat-psych">心情按鈕</span>
+            <span class="cat cat-res">移動導航</span>
+          </div>
+          <h2><span> 阿伴：異鄉人的城市足跡助理</span></h2>
+          <p>針對異鄉學子移動時的心理安全感缺失。透過質性/量化研究迭代設計，在技術限制下將地理數據轉化為視覺化的歸屬感與情感足跡 。</p>
+          <div class="pcard-footer">
+            <span class="pcard-meta">2025 · 迭代研究設計</span>
+            <span class="pcard-link">閱讀 <span class="arrow">→</span></span>
+          </div>
+        </div>
+      </a>
+
+      <a href="projects.html#journal" class="pcard third c-navy">
+        <div class="pcard-img">
+          <img src="images/hotdogg.png" alt="感恩日記 App：正向心理介入工具">
+        </div>
+        <div class="pcard-body">
+          <div class="pcard-cats">
+            <span class="cat cat-ui">行為設計</span>
+            <span class="cat cat-res">LLM 應用</span>
+          </div>
+          <h2><span>感恩日記：正向心理數位介入工具</span></h2>
+          <p>終結習慣建立時的「空白焦慮」。導入引導式 LLM ，透過結構化提問降低紀錄門檻，成功將心理練習轉化為無負擔的日常習慣。</p>
+          <div class="pcard-footer">
+            <span class="pcard-meta">2025 · 行為改變研究</span>
+            <span class="pcard-link">閱讀 <span class="arrow">→</span></span>
+          </div>
+        </div>
+      </a>
+
+      <a href="projects.html#EAP" class="pcard third c-teal">
+        <div class="pcard-img">
+          <img src="images/Article6.png" alt="企業 EAP 提案：心理安全職場數位轉型">
+        </div>
+        <div class="pcard-body">
+          <div class="pcard-cats">
+            <span class="cat cat-blog">組織行為</span>
+            <span class="cat cat-res">去標籤化</span>
+          </div>
+          <h2><span>企業 EAP 提案：職場心理安全平台</span></h2>
+          <p>應對離職率飆升的組織危機。透過去標籤化設計與一站式數位平台，打破心理諮詢的污名化障礙，強化組織韌性與人才留任率。</p>
+          <div class="pcard-footer">
+            <span class="pcard-meta">2025 · 策略與體系設計</span>
+            <span class="pcard-link">閱讀 <span class="arrow">→</span></span>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+<!--aside-->
+<aside>
+    <a href="#top">
+        <div class="totop"></div>
+    </a>
+</aside>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-headline">
+      Let's create something<br><span>meaningful together.</span>
+    </div>
+    <div class="footer-cta-wrap">
+      <a href="mailto:22imflora.ho@gmail.com" class="footer-contact">
+        Contact Me →
+      </a>
+    </div>
+  </div>
+  <div class="footer-copy">
+    ALL Right Reserved &copy; 2026 | IamFlora
+  </div>
+</footer>
+
+<script>
+
+  AOS.init({
+    duration: 800,
+    once: true
+  });
+
+  // Hamburger menu
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('open');
+    mobileMenu.classList.toggle('open');
+  });
+
+  // Scroll reveal + skill bar animation
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) {
+        setTimeout(() => {
+          e.target.classList.add('visible');
+          e.target.querySelectorAll('.bar-fill[data-width]').forEach(bar => {
+            bar.style.width = bar.dataset.width + '%';
+          });
+        }, i * 80);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+
+
+</body>
+
+</html>

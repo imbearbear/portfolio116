@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IamFlora</title>
+    <link href="projects.css" rel="stylesheet" >
+    <script type="text/javascript" 
+  src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <script type="text/javascript" src="js/0.js"></script>  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="flower-bg" id="flowerBg"></div>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo">Iam<span>Flora</span></a>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="projects.html" class="active" >Projects</a>
+  </div>
+  <button class="hamburger" id="hamburger">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="projects.html" class="active" >Projects</a>
+</div>
+
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <svg class="doodle-arrow doodle-arrow-1" width="80" height="60" viewBox="0 0 80 60" fill="none" aria-hidden="true"><path d="M10 50 Q30 20 65 15" stroke="#DD782F" stroke-width="2" fill="none" stroke-linecap="round" stroke-dasharray="4 3"/><path d="M58 10 L68 17 L58 24" stroke="#DD782F" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <svg class="doodle-star doodle-star-1" width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true"><path d="M14 2 L16 11 L25 9 L18 15 L22 24 L14 19 L6 24 L10 15 L3 9 L12 11 Z" stroke="#003B59" stroke-width="1.5" fill="none" stroke-linejoin="round"/></svg>
+    <svg class="doodle-arrow doodle-arrow-2" width="70" height="50" viewBox="0 0 70 50" fill="none" aria-hidden="true"><path d="M5 10 Q35 5 60 35" stroke="#2A9D8F" stroke-width="2" fill="none" stroke-linecap="round" stroke-dasharray="3 4"/><path d="M54 42 L62 36 L55 30" stroke="#2A9D8F" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <div class="hero-deco-label">PORTFOLIO</div>
+    <h1>Selected <em>Projects</em></h1>
+    <p>從用戶研究到互動原型，探索如何設計真正符合人類行為的產品體驗。</p>
+    <div class="filter-bar" id="filterBar">
+      <button class="filter-btn active" data-filter="all">全部</button>
+      <button class="filter-btn" data-filter="APP">APP</button>
+      <button class="filter-btn" data-filter="Web">Website</button>
+    </div>
+  </div>
+</div>
+
+<!-- PROJECTS -->
+  <div class="container">
+    <div class="projects-list">
+
+      <!-- Card 1 -->
+      <div class="proj-card" data-category="APP" id="aban">
+        <a href="assets/aban.pdf" target="_blank" class="card-icon-link">
+          <span class="link-text">View PDF</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+            <polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
+          </svg>
+        </a>
+        <div class="proj-grid">
+          <div class="proj-image">
+            <img src="images/aban2.png" alt="阿伴App設計">
+          </div>
+          <div class="proj-content">
+            <div class="proj-header">
+              <p class="proj-title">阿伴 App — 異鄉人的城市足跡助理</p>
+              <p class="proj-sub">情緒導航 × 在地連結 × AI 陪伴</p>
+              <p class="section-label">核心價值理念</p>
+              <p class="proj-quote">「導航不應只是縮短路徑的工具，而是連結人與城市的溫度。我們將地理數據轉化為歸屬感，讓每個獨自移動的瞬間，都能感受到被理解的陪伴。」</p>
+            </div>
+            <p class="section-label">設計邏輯架構</p>
+            <div class="logic-row">
+              <div class="logic-box">
+                <p class="logic-box-label">問題定義</p>
+                <p class="logic-box-content">孤獨感的風險：異鄉人在陌生城市深夜移動時，面對不熟悉的環境與社交斷層的心理安全感缺失。</p>
+              </div>
+              <div class="logic-box">
+                <p class="logic-box-label">設計決策</p>
+                <p class="logic-box-content">從「單一功能資訊」轉向「資訊情緒整合」。開發情緒標記與地圖足跡，第二版引入「心情按鈕」區隔資訊需求與情感需求。</p>
+              </div>
+              <div class="logic-box">
+                <p class="logic-box-label">技術權衡</p>
+                <p class="logic-box-content">面對 80% 的語音延遲負評，將語音縮限於情感支持，增加 Loading 動畫與登入指引以優化等待體驗。</p>
+              </div>
+            </div>
+            <p class="section-label">量化研究數據</p>
+            <div class="highlight-row">
+              <span class="highlight-pill">V1: AI角色模糊，須更強調情緒價值</span>
+              <span class="highlight-pill">地圖標記 × 整體滿意度相關係數 .75</span>
+            </div>
+            <p class="section-label" style="margin-top:12px;">核心功能設計價值</p>
+            <div class="highlight-row">
+              <span class="highlight-pill">地圖足跡 → 視覺化城市歸屬感</span>
+              <span class="highlight-pill">語音模式 → 專注情感支持與共感</span>
+              <span class="highlight-pill">引導提問 → 降低語音互動門檻</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="proj-card" data-category="APP" id="journal">
+        <a href="https://www.figma.com/design/vfgNuR9AxutjoNHXD7c5vy/HW3.2-%E8%A1%A8%E5%96%AE%E5%85%83%E4%BB%B6-UI-%E8%A8%AD%E8%A8%88?node-id=0-1&t=5JIjEH7AXecHARI6-1" target="_blank" class="card-icon-link">
+          <span class="link-text">View Figma</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+            <polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
+          </svg>
+        </a>
+        <div class="proj-grid">
+          <div class="proj-image">
+            <img src="images/hotdog.png" alt="感恩日記App 介面設計">
+          </div>
+          <div class="proj-content">
+            <div class="proj-header">
+              <p class="proj-title">感恩日記 App — 正向心理學介入工具</p>
+              <p class="proj-sub">幸福感養成 × 行為誘因設計 × LLM 應用</p>
+              <p class="section-label">核心價值理念</p>
+              <p class="proj-quote">「設計的本質在於賦能。我們透過數位介入降低正向心理學的實踐門檻，將『寫日記』從一種壓力轉化為一種自我療癒的反射習慣。」</p>
+            </div>
+            <p class="section-label">設計邏輯架構</p>
+            <div class="logic-row">
+              <div class="logic-box">
+                <p class="logic-box-label">問題定義</p>
+                <p class="logic-box-content">用戶了解感恩好處卻難以養成習慣。核心障礙在於忙碌與「空白焦慮」——不知道要寫什麼。</p>
+              </div>
+              <div class="logic-box">
+                <p class="logic-box-label">設計決策</p>
+                <p class="logic-box-content">引入 Chatbot 引導式寫作，透過「為什麼」結構化提問降低紀錄門檻，並輔以連續簽到成就機制強化誘因。</p>
+              </div>
+              <div class="logic-box">
+                <p class="logic-box-label">設計價值</p>
+                <p class="logic-box-content">將心理學介入手段數位化，每個功能節點皆對應一個行為改變障礙（提醒、選色、對話）。</p>
+              </div>
+            </div>
+            <p class="section-label">核心功能設計價值</p>
+            <div class="highlight-row">
+              <span class="highlight-pill">表情選色 → 降低表達阻力</span>
+              <span class="highlight-pill">Chatbot 引導 → 解決內容焦慮</span>
+              <span class="highlight-pill">視覺化回顧 → 強化正向反饋</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="proj-card" data-category="Web" id="EAP"> 
+        <a href="https://imbearbear.github.io/1216/" target="_blank" class="card-icon-link">
+          <span class="link-text">View Demo</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+            <polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
+          </svg>
+        </a>
+        <div class="proj-grid">
+          <div class="proj-image">
+            <img src="images/Article6.png" alt="EAP 平台設計">
+          </div>
+          <div class="proj-content">
+            <div class="proj-header">
+              <p class="proj-title">企業 EAP 提案 — 心理安全感數位轉型</p>
+              <p class="proj-sub">職場韌性 × 降低人才流失 × 去污名化設計</p>
+              <p class="section-label">核心價值理念</p>
+              <p class="proj-quote">「打造一個『允許壓力被看見且可討論』的職場文化。我們透過隱私與去標籤化設計，重新定義員工協助方案，將心理健康從福利轉化為組織的韌性資產。」</p>
+            </div>
+            <p class="section-label">設計邏輯架構</p>
+            <div class="logic-row">
+              <div class="logic-box">
+                <p class="logic-box-label">問題定義</p>
+                <p class="logic-box-content">離職率自 12% 飆升至 21%，傳統 EAP 使用率不足 5%，主因為職場對「壓力」的污名化。</p>
+              </div>
+              <div class="logic-box">
+                <p class="logic-box-label">設計決策</p>
+                <p class="logic-box-content">將「被動諮詢」轉化為「主動融入」。透過線上預約系統確保匿名性，降低在辦公室被發現的焦慮感。</p>
+              </div>
+              <div class="logic-box">
+                <p class="logic-box-label">策略指標</p>
+                <p class="logic-box-content">預期提升使用率至 15% 以上。整合知識庫與匿名社群按鈕，打造「壓力可談論」的職場文化。</p>
+              </div>
+            </div>
+            <p class="section-label">核心功能設計價值</p>
+            <div class="highlight-row">
+              <span class="highlight-pill">視訊預約 → 隱私保護極大化</span>
+              <span class="highlight-pill">「我也遇過」按鈕 → 建立同儕支持</span>
+              <span class="highlight-pill">微課程 → 碎片化健康管理</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+<!--aside-->
+<aside>
+    <a href="#top">
+        <div class="totop"></div>
+    </a>
+</aside>
+
+<!-- FOOTER -->
+<footer>
+  ALL Right Reserved &copy; 2026 | IamFlora
+</footer>
+
+<script>
+  // Hamburger menu
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('open');
+    mobileMenu.classList.toggle('open');
+  });
+
+  // ── Flower background generator ──
+const FLOWER_COLORS = [
+  ['#003B59','#DD782F'], ['#DD782F','#003B59'], ['#2A9D8F','#F5F0EA'],
+  ['#A57B5B','#F5F0EA'], ['#5C7A6E','#F5F0EA'], ['#003B59','#2A9D8F'],
+  ['#DD782F','#F5F0EA'], ['#6B4E35','#DD782F'],
+];
+
+function makeDaisy(fc, cc, size){
+  const r = size * 0.5;
+  const p = size * 0.2;   // petal offset
+  const pr = size * 0.18; // petal radius
+  const cr = size * 0.13; // centre radius
+  const cx = size/2, cy = size/2;
+  const offsets = [[0,-1],[0,1],[-1,0],[1,0],[-0.7,-0.7],[0.7,-0.7],[-0.7,0.7],[0.7,0.7]];
+  const petals = offsets.map(([ox,oy]) =>
+    `<circle cx="${(cx+ox*p*1.1).toFixed(1)}" cy="${(cy+oy*p*1.1).toFixed(1)}" r="${pr}" fill="${fc}"/>`
+  ).join('');
+  return `<svg width="${size}" height="${size}" viewBox="0 0 ${size} ${size}" fill="none" xmlns="http://www.w3.org/2000/svg">
+    ${petals}
+    <circle cx="${cx}" cy="${cy}" r="${size*0.22}" fill="${fc}"/>
+    <circle cx="${cx}" cy="${cy}" r="${cr}" fill="${cc}"/>
+  </svg>`;
+}
+
+function makeStar(fc, cc, size){
+  const cx = size/2, cy = size/2;
+  const outerR = size * 0.42;
+  const innerR = size * 0.18;
+  const points = 8;
+  let pts = '';
+  for(let i=0;i<points*2;i++){
+    const angle = (i * Math.PI) / points - Math.PI/2;
+    const r = i%2===0 ? outerR : innerR;
+    pts += `${(cx+r*Math.cos(angle)).toFixed(2)},${(cy+r*Math.sin(angle)).toFixed(2)} `;
+  }
+  return `<svg width="${size}" height="${size}" viewBox="0 0 ${size} ${size}" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <polygon points="${pts.trim()}" fill="${fc}"/>
+    <circle cx="${cx}" cy="${cy}" r="${size*0.15}" fill="${cc}"/>
+  </svg>`;
+}
+
+const bg = document.querySelector('.flower-bg');
+
+const step = 160;
+const cols = Math.ceil(window.innerWidth / step) + 1;
+const rows = Math.ceil(window.innerHeight / step) + 1;
+
+for(let i = 0; i < cols * rows; i++){
+
+  // 🌸 隨機留白（關鍵！）
+  if (Math.random() < 0.3) continue;
+
+  const pair = FLOWER_COLORS[Math.floor(Math.random() * FLOWER_COLORS.length)];
+
+  // 🌸 大小變化
+  const size = 75 + Math.random() * 60;
+
+  const svg = Math.random() > 0.45 
+    ? makeDaisy(pair[0], pair[1], size) 
+    : makeStar(pair[0], pair[1], size);
+
+  const rotate = Math.floor(Math.random() * 360);
+  const delay = (Math.random() * 0.8).toFixed(2);
+
+  const el = document.createElement('div');
+  el.className = 'flower-wrap';
+
+  // 🌸 透明度層次（超關鍵）
+  const opacity = 0.3 + Math.random() * 0.25;
+
+  el.style.cssText = `
+    width:${step}px;
+    height:${step}px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    transform:rotate(${rotate}deg);
+    animation-delay:${delay}s;
+    opacity:${opacity};
+  `;
+
+  el.innerHTML = svg;
+  bg.appendChild(el);
+}
+
+document.querySelectorAll('.filter-btn').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    // 1️⃣ 先把所有按鈕取消 active
+    document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
+    // 2️⃣ 當前按鈕加上 active
+    btn.classList.add('active');
+
+    const f = btn.dataset.filter; // 3️⃣ 取得篩選類別
+    document.querySelectorAll('.proj-card').forEach(c=>{
+      if(f==='all' || c.dataset.category===f){
+        // 顯示符合的卡片
+        c.classList.remove('visible');
+c.style.display='';
+setTimeout(()=>c.classList.add('visible'),50);
+      } else {
+        // 隱藏不符合的卡片
+        c.style.display='none';
+      }
+    });
+  });
+});
+
+</script>
+
+</body>
+
+</html>
