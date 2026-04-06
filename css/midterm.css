@@ -621,6 +621,7 @@ aside{
     footer {
       background: var(--dark);
       padding: 64px 64px 32px;
+	color: #F8F7F1 ;
     }
 
     .footer-inner {
@@ -660,7 +661,7 @@ aside{
 		margin: 0 auto;
       	font-size: 0.72rem; 
 		text-align: center;
-      	color: #F8F7F1;
+      	color: #F8F7F1 ;
     }
 
 
