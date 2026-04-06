@@ -620,7 +620,6 @@ aside{
  /* ═══ FOOTER ═══ */
     footer {
       background: var(--dark);
-      color: rgba(255,255,255,0.5);
       padding: 64px 64px 32px;
     }
 
@@ -657,9 +656,11 @@ aside{
     .footer-contact:hover { background: var(--amber-lt); transform: translateY(-2px); }
 
     .footer-copy {
-      max-width: 1160px; margin: 0 auto;
-      font-size: 0.72rem; text-align: center;
-      color: rgba(255,255,255,0.25);
+      	max-width: 1160px;
+		margin: 0 auto;
+      	font-size: 0.72rem; 
+		text-align: center;
+      	color: #F8F7F1;
     }
 
 
